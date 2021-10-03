@@ -57,7 +57,7 @@ function createCactus() {
     } else if (cactusPosition > 0 && cactusPosition < 60 && position < 60) {
       // Game over
       clearInterval(leftTimer);
-      isGameOver = true;
+      isGameOver = false;
       document.body.innerHTML = '<h2 class="game-over">ACABOU!!</h2>';
     } else {
       cactusPosition -= 10;
